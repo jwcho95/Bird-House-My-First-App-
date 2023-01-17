@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reasonOfRefundArray">
+        <item>반품 사유를 선택해주세요.</item>
+        <item>단순 변심</item>
+        <item>실수로 구매함</item>
+        <item>제품 불량</item>
+        <item>기타</item>
+    </string-array>
+</resources>

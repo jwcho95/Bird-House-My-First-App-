@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView227"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="20,000원"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView226"
+        app:layout_constraintStart_toStartOf="@+id/textView226"
+        app:layout_constraintTop_toBottomOf="@+id/textView226" />
+
+    <TextView
+        android:id="@+id/textView226"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="부담없이 먹이기 좋아요~"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView225"
+        app:layout_constraintStart_toStartOf="@+id/textView225"
+        app:layout_constraintTop_toBottomOf="@+id/textView225" />
+
+    <TextView
+        android:id="@+id/textView225"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="잡곡 냠냠"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38"
+        app:layout_constraintStart_toStartOf="@+id/imageView38"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+    <TextView
+        android:id="@+id/textView224"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="16,000원"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView223"
+        app:layout_constraintStart_toStartOf="@+id/textView223"
+        app:layout_constraintTop_toBottomOf="@+id/textView223" />
+
+    <TextView
+        android:id="@+id/textView223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="모든 앵무새들의 원픽!"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView222"
+        app:layout_constraintStart_toStartOf="@+id/textView222"
+        app:layout_constraintTop_toBottomOf="@+id/textView222" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView35"
+        app:layout_constraintStart_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView218"
+        app:srcCompat="@drawable/cereal" />
+
+    <TextView
+        android:id="@+id/textView222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="해바라기 씨앗"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView37"
+        app:layout_constraintStart_toStartOf="@+id/imageView37"
+        app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toStartOf="@+id/imageView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView215"
+        app:srcCompat="@drawable/sunflower_seed" />
+
+    <TextView
+        android:id="@+id/textView221"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="230,000원"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView220"
+        app:layout_constraintStart_toStartOf="@+id/textView220"
+        app:layout_constraintTop_toBottomOf="@+id/textView220" />
+
+    <TextView
+        android:id="@+id/textView220"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="우아함이 돋보이는 집"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView219"
+        app:layout_constraintStart_toStartOf="@+id/textView219"
+        app:layout_constraintTop_toBottomOf="@+id/textView219" />
+
+    <TextView
+        android:id="@+id/textView219"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="럭셔리 새장"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView36"
+        app:layout_constraintStart_toStartOf="@+id/imageView36"
+        app:layout_constraintTop_toBottomOf="@+id/imageView36" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider41"
+        app:srcCompat="@drawable/luxurious_birdcage" />
+
+    <TextView
+        android:id="@+id/textView218"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="105,000원"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView217"
+        app:layout_constraintStart_toStartOf="@+id/textView217"
+        app:layout_constraintTop_toBottomOf="@+id/textView217" />
+
+    <TextView
+        android:id="@+id/textView217"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="심플 이즈 더 베스트"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView216"
+        app:layout_constraintStart_toStartOf="@+id/textView216"
+        app:layout_constraintTop_toBottomOf="@+id/textView216" />
+
+    <TextView
+        android:id="@+id/textView216"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="심플한 새장"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView35"
+        app:layout_constraintStart_toStartOf="@+id/imageView35"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView36"
+        app:layout_constraintStart_toEndOf="@+id/imageView26"
+        app:layout_constraintTop_toBottomOf="@+id/divider41"
+        app:srcCompat="@drawable/normal_birdcage" />
+
+    <TextView
+        android:id="@+id/textView215"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="17,000원"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView214"
+        app:layout_constraintStart_toStartOf="@+id/textView214"
+        app:layout_constraintTop_toBottomOf="@+id/textView214" />
+
+    <TextView
+        android:id="@+id/textView214"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="똑똑해지는 장난감"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView213"
+        app:layout_constraintStart_toStartOf="@+id/textView213"
+        app:layout_constraintTop_toBottomOf="@+id/textView213" />
+
+    <TextView
+        android:id="@+id/textView213"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="똑똑 앵무새 장난감"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toStartOf="@+id/imageView26"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="대형앵무새 용품"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider41"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider41"
+        app:srcCompat="@drawable/bird_toy" />
+</androidx.constraintlayout.widget.ConstraintLayout>

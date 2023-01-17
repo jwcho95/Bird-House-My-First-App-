@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_project">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/start_image"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/start_image"
+        android:supportsRtl="true"
+        android:theme="@style/Basic"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".FindAddressActivity"></activity>
+        <activity android:name=".PaymentFinishedPage_PhonePay"/>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".ReasonOfRefund" />
+        <activity android:name=".testActivity" />
+        <activity android:name=".AgreeDelivery" />
+        <activity android:name=".PaymentFinishedPage" />
+        <activity android:name=".Category" />
+        <activity android:name=".DeliveryListDetail" />
+        <activity android:name=".OrderListDetailAdmin" />
+        <activity android:name=".AdminPage" />
+        <activity android:name=".SearchPage" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".FindIdOrPassword" />
+        <activity android:name=".CheckPermissions" />
+        <activity android:name=".WriteComplaint" />
+        <activity android:name=".WriteReview" />
+        <activity android:name=".CompanyLocation" />
+        <activity android:name=".ChangeInformation" />
+        <activity android:name=".OrderDetailList" />
+        <activity android:name=".OrderList" />
+        <activity android:name=".OrderCanceled" />
+        <activity android:name=".MyInformation" />
+        <activity android:name=".ShoppingBasket" />
+        <activity android:name=".ProductList" />
+        <activity android:name=".Payment" />
+        <activity android:name=".ProductDetailPage" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".LoginImage" />
+        <activity
+            android:name=".StartImage"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:finishOnTaskLaunch="true"
+            android:icon="@drawable/start_image"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyATuUzYT4-ug5bqZ8kMF2Q6faREglZu2A4" />
+    </application>
+
+</manifest>

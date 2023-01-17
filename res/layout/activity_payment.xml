@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="결제"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider46"
+        app:layout_constraintStart_toEndOf="@+id/imageView44"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/divider46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_backspace" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider46">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="0, 1, 2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView243"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="3"
+                        android:text="주문 내역"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView244"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/divider10"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_span="3"
+                        android:background="?android:attr/listDivider" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/divider12"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_span="3"
+                        android:background="?android:attr/listDivider" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="배송비"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:text="2,500원"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/divider14"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_span="3"
+                        android:background="?android:attr/listDivider" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="center"
+                        android:text=" 합계 금액: "
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:gravity="center_horizontal"
+                        android:text="0원"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/divider15"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_span="3"
+                        android:background="?android:attr/listDivider" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="3"
+                        android:text="결제 정보"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView245"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/divider16"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_span="3"
+                        android:background="?android:attr/listDivider" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3">
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="이름 : "
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName2"
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="64dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:hint=" 필수"
+                            android:inputType="textPersonName"
+                            android:textColorHint="@color/Red"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName8"
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:hint=" 필수"
+                            android:inputType="textPersonName"
+                            android:textColorHint="@color/Red"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+                            app:layout_constraintStart_toStartOf="@+id/checkBox6"
+                            app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="전화 번호 : "
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/textView32"
+                            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="배송지 : "
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView265"
+                            app:layout_constraintEnd_toEndOf="@+id/textView34"
+                            app:layout_constraintTop_toTopOf="@+id/textView265" />
+
+                        <EditText
+                            android:id="@+id/editTextPhone"
+                            android:layout_width="225dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:hint=" 필수"
+                            android:inputType="phone"
+                            android:textColorHint="@color/Red"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView34"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+                            app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="이메일 : "
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/textView263"
+                            app:layout_constraintTop_toBottomOf="@+id/textView263" />
+
+                        <EditText
+                            android:id="@+id/editTextTextEmailAddress"
+                            android:layout_width="226dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:inputType="textEmailAddress"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView36"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextPostalAddress"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress"
+                            app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="결제 방식 : "
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/textView36"
+                            app:layout_constraintTop_toBottomOf="@+id/textView36"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="122dp"
+                            android:layout_height="22dp"
+                            android:text="무통장 입금"
+                            android:textSize="15sp
+"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView37"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+                            app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="휴대폰\n소액결제"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/checkBox6"
+                            app:layout_constraintStart_toEndOf="@+id/checkBox6"
+                            app:layout_constraintTop_toTopOf="@+id/checkBox6" />
+
+                        <TextView
+                            android:id="@+id/textView38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="입금자명 : "
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/textView37"
+                            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="32dp"
+                            android:text="입금은행 : "
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/textView84"
+                            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="226dp"
+                            android:layout_height="22dp"
+                            android:entries="@array/BankName"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+                            app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+                        <TextView
+                            android:id="@+id/textView84"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="계좌 번호: "
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/textView38"
+                            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName10"
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:hint=" 필수, 숫자만 입력"
+                            android:inputType="number"
+                            android:textColorHint="@color/Red"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView84"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
+                            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+                            app:layout_constraintTop_toTopOf="@+id/textView84" />
+
+                        <TextView
+                            android:id="@+id/textView263"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="상세 주소: "
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/textView35"
+                            app:layout_constraintTop_toBottomOf="@+id/button29" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPostalAddress"
+                            android:layout_width="225dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/border"
+                            android:ems="10"
+                            android:hint=" 필수"
+                            android:inputType="textPostalAddress"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/Red"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView263"
+                            app:layout_constraintStart_toStartOf="@+id/button29"
+                            app:layout_constraintTop_toTopOf="@+id/textView263" />
+
+                        <Button
+                            android:id="@+id/button29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:text="상세 주소 검색"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView265"
+                            app:layout_constraintTop_toBottomOf="@+id/textView265" />
+
+                        <TextView
+                            android:id="@+id/textView265"
+                            android:layout_width="225dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/border"
+                            android:hint=" 주소를 검색해주세요"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/Red"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+                            app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/divider17"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_span="3"
+                        android:background="?android:attr/listDivider" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:text="결제하기"
+                        app:backgroundTint="#FF9800" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/divider46"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

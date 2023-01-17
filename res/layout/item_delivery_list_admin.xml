@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/destination_deliveryList_admin"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="destination"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/textView171"
+                app:layout_constraintTop_toTopOf="@+id/textView171" />
+
+            <TextView
+                android:id="@+id/goToDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="주문 상세 보기 ▶"
+                android:textColor="#FF6200EE"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView173" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.906">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/basic_image" />
+
+                    <TextView
+                        android:id="@+id/itemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Name"
+                        app:layout_constraintStart_toEndOf="@+id/itemImage"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/itemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Price"
+                        app:layout_constraintStart_toStartOf="@+id/itemName"
+                        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+                    <TextView
+                        android:id="@+id/itemCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Quantity"
+                        app:layout_constraintBottom_toBottomOf="@+id/itemName"
+                        app:layout_constraintStart_toEndOf="@+id/itemName"
+                        app:layout_constraintTop_toTopOf="@+id/itemName" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/delivery_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="deliveryCompany"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView173"
+                app:layout_constraintStart_toEndOf="@+id/textView173"
+                app:layout_constraintTop_toTopOf="@+id/textView173" />
+
+            <TextView
+                android:id="@+id/delivery_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="deliveryNum"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView172"
+                app:layout_constraintStart_toEndOf="@+id/textView172"
+                app:layout_constraintTop_toTopOf="@+id/textView172" />
+
+            <TextView
+                android:id="@+id/textView171"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
+                android:text="배송지: "
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView172"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="운송장 번호: "
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/orderName_deliveryList_admin"
+                app:layout_constraintStart_toStartOf="@+id/textView168" />
+
+            <TextView
+                android:id="@+id/textView173"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="택배사: "
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/textView172"
+                app:layout_constraintStart_toStartOf="@+id/textView172" />
+
+            <TextView
+                android:id="@+id/textView168"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="주문자: "
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/textView170"
+                app:layout_constraintStart_toStartOf="@+id/textView170" />
+
+            <TextView
+                android:id="@+id/textView170"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="연락처: "
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/textView171"
+                app:layout_constraintStart_toStartOf="@+id/textView171" />
+
+            <TextView
+                android:id="@+id/orderName_deliveryList_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="orderName"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView168"
+                app:layout_constraintTop_toTopOf="@+id/textView168" />
+
+            <TextView
+                android:id="@+id/orderPhoneNum_deliveryList_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="orderPhoneNum"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView170"
+                app:layout_constraintStart_toEndOf="@+id/textView170"
+                app:layout_constraintTop_toTopOf="@+id/textView170" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

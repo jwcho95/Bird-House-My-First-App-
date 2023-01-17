@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="delivery_company">
+        <item>CJ대한통운</item>
+        <item>우체국택배</item>
+        <item>한진택배</item>
+        <item>롯데택배</item>
+        <item>로젠택배</item>
+        <item>홈픽택배</item>
+        <item>경동택배</item>
+        <item>대신택배</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ProductSeed">
+        <item>seed1</item>
+        <item>seed2</item>
+        <item>seed3</item>
+        <item>seed4</item>
+        <item>seed5</item>
+    </string-array>
+</resources>

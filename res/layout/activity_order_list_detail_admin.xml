@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderList">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_backspace" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="주문 상세 내역"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider39">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_order_detail_list"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_span="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView162" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="주문 정보"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="주문하신 분: "
+                    app:layout_constraintStart_toStartOf="@+id/textView164"
+                    app:layout_constraintTop_toBottomOf="@+id/textView164" />
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="연락처: "
+                    app:layout_constraintStart_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="배송지: "
+                    app:layout_constraintStart_toStartOf="@+id/textView112"
+                    app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+                <TextView
+                    android:id="@+id/textView161"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="결제 금액: "
+                    app:layout_constraintStart_toStartOf="@+id/textView176"
+                    app:layout_constraintTop_toBottomOf="@+id/textView176" />
+
+                <View
+                    android:id="@+id/divider37"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reasonOfRefund_admin" />
+
+                <TextView
+                    android:id="@+id/textView162"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="주문하신 상품"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider37" />
+
+                <TextView
+                    android:id="@+id/textView164"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="주문 날짜: "
+                    app:layout_constraintStart_toStartOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <TextView
+                    android:id="@+id/orderDate_orderDetailList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="orderDate"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView164"
+                    app:layout_constraintStart_toEndOf="@+id/textView164"
+                    app:layout_constraintTop_toTopOf="@+id/textView164" />
+
+                <TextView
+                    android:id="@+id/orderName_orderDetailList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="orderName"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/orderPhoneNum_orderDetailList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="orderPhoneNum"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView112"
+                    app:layout_constraintStart_toEndOf="@+id/textView112"
+                    app:layout_constraintTop_toTopOf="@+id/textView112" />
+
+                <TextView
+                    android:id="@+id/destination_orderDetailList"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="destination"
+                    app:layout_constraintStart_toEndOf="@+id/textView113"
+                    app:layout_constraintTop_toTopOf="@+id/textView113" />
+
+                <TextView
+                    android:id="@+id/productPrice_OrderDetailList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="price"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView161"
+                    app:layout_constraintStart_toEndOf="@+id/textView161"
+                    app:layout_constraintTop_toTopOf="@+id/textView161" />
+
+                <TextView
+                    android:id="@+id/textView176"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="이메일: "
+                    app:layout_constraintStart_toStartOf="@+id/textView113"
+                    app:layout_constraintTop_toBottomOf="@+id/destination_orderDetailList" />
+
+                <TextView
+                    android:id="@+id/email_orderDetailList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="email"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView176"
+                    app:layout_constraintStart_toEndOf="@+id/textView176"
+                    app:layout_constraintTop_toTopOf="@+id/textView176" />
+
+                <TextView
+                    android:id="@+id/textView246"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="결제 방법: "
+                    app:layout_constraintStart_toStartOf="@+id/textView161"
+                    app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+                <TextView
+                    android:id="@+id/textView247"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="결제한 은행: "
+                    app:layout_constraintStart_toStartOf="@+id/textView246"
+                    app:layout_constraintTop_toBottomOf="@+id/textView246" />
+
+                <TextView
+                    android:id="@+id/textView248"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="계좌 번호: "
+                    app:layout_constraintBottom_toTopOf="@+id/divider37"
+                    app:layout_constraintStart_toStartOf="@+id/textView247"
+                    app:layout_constraintTop_toBottomOf="@+id/textView247"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/howToPay_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="howToPay"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView246"
+                    app:layout_constraintStart_toEndOf="@+id/textView246"
+                    app:layout_constraintTop_toTopOf="@+id/textView246" />
+
+                <TextView
+                    android:id="@+id/bankName_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="bankName"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView247"
+                    app:layout_constraintStart_toEndOf="@+id/textView247"
+                    app:layout_constraintTop_toTopOf="@+id/textView247" />
+
+                <TextView
+                    android:id="@+id/bankNum_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="bankNum"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView248"
+                    app:layout_constraintStart_toEndOf="@+id/textView248"
+                    app:layout_constraintTop_toTopOf="@+id/textView248" />
+
+                <TextView
+                    android:id="@+id/textView252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="환불 사유: "
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="@+id/textView248"
+                    app:layout_constraintTop_toBottomOf="@+id/textView248" />
+
+                <TextView
+                    android:id="@+id/reasonOfRefund_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="reasonOfRefund"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/textView252"
+                    app:layout_constraintTop_toTopOf="@+id/textView252" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/divider39"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+</androidx.constraintlayout.widget.ConstraintLayout>
