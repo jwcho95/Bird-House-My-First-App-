@@ -10,7 +10,7 @@ import java.util.Map;
 public class InformationRequest extends StringRequest {
 
     // 서버 URL 설정 (PHP 파일 연동)
-    final static private String URL = "http://172.30.1.18/Information.php";
+    final static private String URL = "http://IP주소/Information.php";
     private Map<String, String> map;
 
     public InformationRequest(String userId, Response.Listener<String> listener){

@@ -7,8 +7,8 @@ import javax.mail.MessagingException;
 import javax.mail.SendFailedException;
 
 public class SendMail {
-    String user = "practicebirdhouse"; // 보내는 계정의 id
-    String password = "birdhouse1!"; // 보내는 계정의 pw
+    String user = ""; // 보내는 계정의 id
+    String password = ""; // 보내는 계정의 pw
 
 
 
